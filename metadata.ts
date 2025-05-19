@@ -20,6 +20,7 @@ const openGraph = ({
     title,
     description,
     siteName: TITLE,
+    images: new URL("/logo.png", process.env.NEXT_PUBLIC_URL).href,
   };
 };
 
@@ -34,6 +35,7 @@ const twitter = ({
     card: "summary",
     title,
     description,
+    images: new URL("/logo.png", process.env.NEXT_PUBLIC_URL).href,
   };
 };
 
@@ -42,6 +44,7 @@ const appleWebApp = ({ title }: { title: string }): AppleWebApp => {
     capable: true,
     statusBarStyle: "default",
     title: title,
+    startupImage: new URL("/logo.png", process.env.NEXT_PUBLIC_URL).href,
   };
 };
 

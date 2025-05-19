@@ -40,7 +40,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="container m-auto min-h-screen p-2 flex flex-col justify-around">
+    <main className="container m-auto min-h-svh p-2 flex flex-col justify-around">
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
         IOS Date Picker shadcn/ui
       </h1>

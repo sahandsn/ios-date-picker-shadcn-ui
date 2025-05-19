@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Drawer,
   DrawerClose,
@@ -27,7 +29,7 @@ import { IosDatePickerItem } from "./ios-date-picker-item";
 
 const ShowDate = "d MMMM yyyy";
 
-type TCarouselDatePicker = {
+type TIosDatePicker = {
   onChange?: (date: Date) => void;
   value?: Date;
   yearRange?: { start: number; end: number } | number;
@@ -36,10 +38,10 @@ type TCarouselDatePicker = {
   disabled?: boolean;
 };
 
-export function CarouselDatePicker(props: Readonly<TCarouselDatePicker>) {
+export function IosDatePicker(props: Readonly<TIosDatePicker>) {
   const {
     value,
-    placeholder,
+    placeholder = "select a date",
     disabled,
     className,
     onChange,

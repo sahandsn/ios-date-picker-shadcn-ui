@@ -60,15 +60,14 @@ export default function linkPreviewMetadata({
     openGraph: openGraph({ description, title, url }),
     twitter: twitter({ description, title }),
     appleWebApp: appleWebApp({ title }),
-    metadataBase: new URL(process.env.NEXT_PUBLIC_URL ?? ""),
     applicationName: TITLE,
     title: TITLE,
     description,
     keywords,
     alternates: {
-      canonical: new URL(url, process.env.NEXT_PUBLIC_URL),
+      canonical: new URL(url, process.env.NEXT_PUBLIC_URL).href,
       languages: {
-        en: new URL(`/en${url}`, process.env.NEXT_PUBLIC_URL),
+        en: new URL(url, process.env.NEXT_PUBLIC_URL).href,
       },
     },
   };

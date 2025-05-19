@@ -3,6 +3,16 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Calendar } from "lucide-react";
 import Link from "next/link";
 import { DateForm } from "@/components/ui/date-form";
+import linkPreviewMetadata from "@/metadata";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = linkPreviewMetadata({
+  description:
+    "This is a date picker built with shadcn/ui and IOS-carousel style.",
+  keywords: "ios, date picker, shadcn, shadcn-ui",
+  title: "IOS Date Picker shadcn/ui",
+  url: "/",
+});
 
 type TInfo = {
   Icon: IconType;

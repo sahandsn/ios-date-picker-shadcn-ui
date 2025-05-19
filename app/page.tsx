@@ -15,7 +15,7 @@ export default function Home() {
     {
       Icon: Calendar,
       title: "IOS Date Picker",
-      link: "http://localhost:3000/",
+      link: "https://ios-date-picker-shadcn-ui.vercel.app/",
     },
     {
       Icon: FaGithub,
